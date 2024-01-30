@@ -71,8 +71,8 @@ function ImageItem({ image }) {
                 className="w-full max-h-[600px] object-cover"
                 src={loading ? image.urls.full : image.urls.small}
                 alt={image.alt_description}
-                width={500}
-                height={500}
+                width={image.width}
+                height={image.height}
                 onLoad={loadingKontrol}
               />
               <p className="text-xs text-right italic mt-4 absolute text-white bottom-4 right-5">
